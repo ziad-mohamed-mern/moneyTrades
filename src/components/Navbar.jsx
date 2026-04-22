@@ -14,10 +14,10 @@ export const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <Logo className="h-12 w-auto" />
+          <Logo className="h-15 md:h-15 w-auto scale-110 origin-right transition-transform" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-10 font-medium text-sm">
+        <div className="hidden md:flex items-center gap-10 font-medium text-sm absolute left-1/2 transform -translate-x-1/2">
           <Link to="/" className="text-brand-accent transition-colors">الرئيسية</Link>
           {isHome ? (
             <>

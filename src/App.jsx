@@ -5,6 +5,8 @@ import { Home } from './pages/Home'
 import { ProjectDetails } from './pages/ProjectDetails'
 import { ThemeProvider } from './context/ThemeContext'
 
+import { AboutUs } from './pages/AboutUs'
+
 function App() {
   return (
     <ThemeProvider>
@@ -15,6 +17,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
             <Route path="/project/:id" element={<ProjectDetails />} />
           </Routes>
         </main>

@@ -1,14 +1,15 @@
+import { Link } from 'react-router-dom'
 import { Logo } from './Logo'
 
 export const Footer = () => (
   <footer className="bg-brand-secondary pt-16 pb-8 border-t border-brand-border mt-auto">
     <div className="container mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-        <div className="md:col-span-2">
-          <div className="mb-6">
-            <Logo className="h-16 w-auto mb-2" />
-          </div>
-          <p className="text-brand-text-muted text-sm max-w-sm mb-6 leading-relaxed">
+        <div className="flex flex-col items-center md:items-start md:col-span-2">
+          <Link to="/" className="inline-block">
+            <Logo className="h-24 md:h-32 w-auto mb-4 scale-110 origin-right" />
+          </Link>
+          <p className="text-brand-text-muted text-sm mt-4 text-center md:text-right max-w-xs">
             الشركة الرائدة في مجال الاستثمار وإدارة الثروات، نقدم حلولنا وفق أعلى معايير الجودة لضمان نجاح عملائنا المستمر.
           </p>
         </div>

@@ -12,17 +12,19 @@ export const Home = () => {
       {/* Hero Section */}
       <header className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-20">
         <div className="absolute inset-0 z-0 bg-brand-bg">
-          <img src={heroBg} alt="Corporate Background" className="w-full h-full object-cover opacity-20 dark:opacity-40" />
+          <img src={heroBg} alt="Corporate Background" className="w-full h-full object-cover opacity-80 dark:opacity-80" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-transparent to-brand-bg/50"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-accent/30 bg-brand-secondary/50 text-brand-accent text-xs font-bold mb-8 animate-fade-in backdrop-blur-md">
-            <span className="relative flex h-2 w-2">
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 md:px-6 md:py-3 rounded-full bg-gradient-to-r from-brand-accent/10 to-transparent border border-brand-accent/20 backdrop-blur-md shadow-[0_0_20px_rgba(212,175,55,0.05)] hover:shadow-[0_0_30px_rgba(212,175,55,0.15)] hover:border-brand-accent/40 transition-all mb-8 mt-8 animate-fade-in max-w-[90vw] md:max-w-max">
+            <span className="relative flex h-2.5 w-2.5 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-accent shadow-[0_0_8px_rgba(212,175,55,0.8)]"></span>
             </span>
-            الرؤية الجديدة للإستثمار
+            <span className="text-xs md:text-sm font-bold text-brand-text/90 tracking-wide truncate whitespace-normal text-center">
+              الرؤية الجديدة للإستثمار
+            </span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 animate-fade-in delay-100 max-w-5xl mx-auto">
@@ -33,13 +35,17 @@ export const Home = () => {
           <p className="text-lg md:text-xl text-brand-text-muted max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-in delay-200">
             نقدم حلولاً مالية متكاملة لرواد الأعمال والمستثمرين، بخبرة تمتد لسنوات في تنمية الثروات وإدارة المخاطر برؤية مستقبلية واضحة.
           </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-300">
-            <a href="#contact" className="w-full sm:w-auto px-10 py-4 bg-brand-accent hover:bg-brand-accent-hover text-brand-primary font-bold rounded shadow-xl transition-all hover:-translate-y-1">
-              ابدأ الاستثمار الآن
-            </a>
-            <a href="#about" className="w-full sm:w-auto px-10 py-4 bg-brand-secondary text-brand-text border border-brand-border hover:border-brand-accent hover:text-brand-accent font-bold rounded transition-all shadow-lg shadow-brand-border/10">
-              اكتشف المزيد
+
+          <div className="flex justify-center animate-fade-in delay-300 relative z-30">
+            <Link to="/about-us" className="px-10 py-4 bg-brand-accent hover:bg-brand-accent-hover text-brand-primary font-bold rounded shadow-xl transition-all hover:-translate-y-1">
+              من نحن
+            </Link>
+          </div>
+
+          <div className="absolute bottom-[-100px] left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+            <a href="#about" className="flex flex-col items-center gap-2 text-brand-text-muted hover:text-brand-accent transition-colors">
+              <span className="text-xs font-bold uppercase tracking-widest">اكتشف</span>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
             </a>
           </div>
         </div>
@@ -62,7 +68,7 @@ export const Home = () => {
             {/* Right side: Text and Buttons */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-brand-accent font-bold mb-2">من نحن</h3>
+                <h3 className="text-brand-accent font-bold mb-2">تجار المال </h3>
                 <h2 className="text-3xl md:text-5xl font-black leading-tight text-brand-text">
                   شريكك الموثوق في <br />رحلة <span className="text-gradient-gold">النجاح المالي</span>
                 </h2>
