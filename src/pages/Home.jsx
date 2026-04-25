@@ -1,5 +1,5 @@
 import heroBg from '../assets/hero_bg.png'
-import aboutCorp from '../assets/about_corp.png'
+import aboutCorp from '../assets/about_european.png'
 import { FeatureCard } from '../components/FeatureCard'
 import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
@@ -58,7 +58,7 @@ export const Home = () => {
             {/* Left side: Image in About Section */}
             <div className="relative">
               <div className="absolute -inset-4 bg-brand-accent/20 rounded-lg blur-2xl -z-10"></div>
-              <img src={aboutCorp} alt="عن تجار المال" className="rounded-lg border border-brand-border shadow-2xl relative z-10 w-full object-cover aspect-[4/3]" />
+              <img src={aboutCorp} alt="European corporate team" className="rounded-lg border border-brand-border shadow-2xl relative z-10 w-full object-cover aspect-[4/3]" />
               <div className="absolute -bottom-6 -right-6 bg-brand-card p-8 rounded-lg border-l-4 border-brand-accent shadow-xl z-20 hidden md:block">
                 <div className="text-4xl font-black text-brand-accent mb-2">+15</div>
                 <div className="text-brand-text text-sm font-bold">عاماً من<br />التميز والخبرة</div>
