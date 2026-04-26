@@ -5,6 +5,11 @@ import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
 import { Logo } from '../components/Logo'
 import { Link } from 'react-router-dom'
+import mohLogo from '../assets/partners/moh.png'
+import sbcLogo from '../assets/partners/sbc.png'
+import modonLogo from '../assets/partners/modon.png'
+import partnersLogo from '../assets/partners/partners.png'
+import successPathLogo from '../assets/partners/path_to_success.png'
 
 export const Home = () => {
   return (
@@ -105,35 +110,54 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-24 bg-brand-secondary">
+      {/* Partners Section (Success Allies) */}
+      <section id="partners" className="py-24 bg-brand-secondary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h3 className="text-brand-accent font-bold mb-2">لماذا تختارنا</h3>
-            <h2 className="text-3xl md:text-5xl font-black text-brand-text">قيمنا ومميزاتنا</h2>
+            <h3 className="text-brand-accent font-bold mb-2">شركاؤنا</h3>
+            <h2 className="text-3xl md:text-5xl font-black text-brand-text">حلفاء النجاح</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <FeatureCard
-              icon={<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
-              title="سرعة التنفيذ"
-              desc="ندرك أهمية الوقت في عالم الأعمال، لذا نضمن سرعة وكفاءة عالية في تنفيذ كافة المعاملات."
-            />
-            <FeatureCard
-              icon={<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>}
-              title="أمان الاستثمار"
-              desc="نعتمد أعلى معايير الأمان والامتثال لضمان حماية استثماراتك في كل خطوة."
-            />
-            <FeatureCard
-              icon={<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>}
-              title="خبرة واسعة"
-              desc="فريق من الخبراء الماليين بخبرات دولية ومحلية لتقديم أفضل الاستشارات."
-            />
-            <FeatureCard
-              icon={<svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>}
-              title="دعم مستمر"
-              desc="خدمة عملاء راقية ومتابعة مستمرة لتقييم الأداء وتحقيق أهدافك."
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
+              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
+                <img src={mohLogo} alt="Ministry of Health" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-text">وزارة الصحة</h3>
+              <p className="text-brand-text-muted text-sm leading-relaxed">شريكنا في تعزيز الرعاية الصحية والابتكار في القطاع الطبي.</p>
+            </div>
+
+            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
+              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
+                <img src={sbcLogo} alt="Saudi Business Center" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-text">المركز السعودي للأعمال</h3>
+              <p className="text-brand-text-muted text-sm leading-relaxed">التعاون الاستراتيجي لتسهيل بيئة الاستثمار وخدمة قطاع الأعمال.</p>
+            </div>
+
+            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
+              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
+                <img src={modonLogo} alt="MODON" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-text">مدن</h3>
+              <p className="text-brand-text-muted text-sm leading-relaxed">شراكة لتطوير المدن الصناعية ودعم البنية التحتية والتقنية.</p>
+            </div>
+
+            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
+              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
+                <img src={partnersLogo} alt="Success Partners" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-text">تجار المال</h3>
+              <p className="text-brand-text-muted text-sm leading-relaxed">شريك النجاح الاستراتيجي والمستشار الموثوق في عالم المال.</p>
+            </div>
+
+            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
+              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
+                <img src={successPathLogo} alt="Path to Success" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-text">الطريق إلى النجاح</h3>
+              <p className="text-brand-text-muted text-sm leading-relaxed">نحن هنا لنكون رفيقك الموثوق في كل خطوة نحو تحقيق طموحاتك المالية الكبرى.</p>
+            </div>
           </div>
         </div>
       </section>
