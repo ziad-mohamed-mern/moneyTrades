@@ -1,15 +1,12 @@
-import mohImg from '../assets/projects/moh_project.png'
-import industryImg from '../assets/projects/industry_project.png'
-import samaImg from '../assets/projects/sama_project.png'
-import cmaImg from '../assets/projects/cma_project.png'
-import commerceImg from '../assets/projects/commerce_project.png'
-
+import sultanMedicalImg from '../assets/projects/sultan_medical.png'
+import samaFinancialImg from '../assets/projects/sama_financial.png'
+import tradingAppImg from '../assets/projects/trading_app.png'
 export const projectsData = [
   {
     id: 1,
     title: 'مجمع السلطان الطبي',
     category: 'استثمار طبي',
-    image: mohImg,
+    image: sultanMedicalImg,
     description: 'مجمع السلطان الطبي هو مجمع طبي متكامل يهدف إلى تقديم خدمات صحية عالية الجودة للمرضى.',
     features: ['ربط البيانات الصحية', 'تطوير حلول التطبيب عن بعد', 'إنشاء ملف صحي موحد', 'أعلى معايير أمان البيانات'],
     status: 'قيد التنفيذ',
@@ -17,21 +14,10 @@ export const projectsData = [
     roi: 'تحسين كفاءة التشغيل'
   },
   {
-    id: 2,
-    title: 'مبادرة التحول الصناعي الذكي',
-    category: 'وزارة الصناعة والثروة المعدنية',
-    image: industryImg,
-    description: 'برنامج استراتيجي يهدف إلى تمكين المصانع الوطنية من تبني تقنيات الثورة الصناعية الرابعة، وتعزيز التنافسية العالمية للصناعة السعودية.',
-    features: ['أتمتة العمليات الصناعية', 'حلول الطاقة المستدامة', 'دعم اللوجستيات الذكية', 'توطين التقنيات المتقدمة'],
-    status: 'قيد التنفيذ',
-    completionDate: '2027',
-    roi: 'زيادة الإنتاجية الوطنية'
-  },
-  {
     id: 3,
-    title: 'بنك المستقبل السعودي',
+    title: 'البنك المركزي السعودي',
     category: 'البنك المركزي السعودي (ساما)',
-    image: samaImg,
+    image: samaFinancialImg,
     description: 'تحديث البنية التحتية للمدفوعات الرقمية وتطوير الأنظمة الرقابية لدعم الابتكار في قطاع التقنية المالية وضمان الاستقرار النقدي.',
     features: ['أنظمة مدفوعات فورية', 'معايير الأمن السيبراني المالي', 'الرقابة الذكية', 'تعزيز الشمول المالي'],
     status: 'مستمر',
@@ -42,22 +28,12 @@ export const projectsData = [
     id: 4,
     title: 'تطبيق تداول تجار المال',
     category: 'تطوير تطبيقات مالية',
-    image: cmaImg,
+    image: tradingAppImg,
     description: 'تطبيق تداول تجار المال هو تطبيق يهدف إلى تسهيل عملية التداول للمستثمرين.',
     features: ['سهولة الاستخدام', 'واجهة سهلة الاستخدام', 'أدوات تحليل متقدمة', 'أدوات شفافية متطورة'],
     status: 'قيد التطوير',
     completionDate: '2025',
-    roi: 'زيادة التداول'
-  },
-  {
-    id: 5,
-    title: 'دعم الاستثمار وريادة الأعمال',
-    category: 'وزارة التجارة والاستثمار',
-    image: commerceImg,
-    description: 'مبادرة شاملة لتسهيل إجراءات ممارسة الأعمال وجذب الاستثمارات النوعية، وتوفير بيئة تجارية آمنة وعادلة للمستثمرين والمستهلكين.',
-    features: ['أتمتة التراخيص التجارية', 'تحسين البيئة التنافسية', 'أنظمة حماية المستهلك', 'دعم نمو الشركات الناشئة'],
-    status: 'نشط',
-    completionDate: '2026',
-    roi: 'نمو الاستثمار الأجنبي'
+    roi: 'زيادة التداول',
+    externalLink: 'https://money-trades-arrows.vercel.app/'
   }
 ];

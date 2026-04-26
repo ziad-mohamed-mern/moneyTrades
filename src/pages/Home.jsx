@@ -10,6 +10,7 @@ import sbcLogo from '../assets/partners/sbc.png'
 import modonLogo from '../assets/partners/modon.png'
 import partnersLogo from '../assets/partners/partners.png'
 import successPathLogo from '../assets/partners/path_to_success.png'
+import { partnersData } from '../data/partners'
 
 export const Home = () => {
   return (
@@ -115,49 +116,62 @@ export const Home = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="text-brand-accent font-bold mb-2">شركاؤنا</h3>
-            <h2 className="text-3xl md:text-5xl font-black text-brand-text">حلفاء النجاح</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-brand-text">شركاء النجاح</h2>
           </div>
 
+          {/* Main Partner - Tjar Al-Mal (Large Banner Style) */}
+          <div className="flex flex-col items-center mb-16">
+            <img 
+              src={partnersLogo} 
+              alt="تجار المال" 
+              className="w-full max-w-2xl md:max-w-3xl h-auto object-contain filter drop-shadow-[0_0_20px_rgba(212,175,55,0.2)] animate-float mb-8"
+            />
+            <p className="text-xl md:text-2xl text-brand-text font-bold text-center max-w-3xl leading-relaxed">
+              شريك النجاح الاستراتيجي والمستشار الموثوق في عالم المال والأعمال
+            </p>
+          </div>
+
+          {/* Other Partners Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
-              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
-                <img src={mohLogo} alt="Ministry of Health" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-text">وزارة الصحة</h3>
-              <p className="text-brand-text-muted text-sm leading-relaxed">شريكنا في تعزيز الرعاية الصحية والابتكار في القطاع الطبي.</p>
-            </div>
+            {partnersData.map((partner) => (
+              <a 
+                key={partner.id} 
+                href={partner.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center relative overflow-hidden pb-10"
+              >
+                <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
+                  <img src={partner.image} alt={partner.title} className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-brand-text group-hover:text-brand-accent transition-colors">{partner.title}</h3>
+                <p className="text-brand-text-muted text-sm leading-relaxed mb-4">{partner.desc}</p>
+                
+                <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-brand-accent text-brand-primary font-bold flex items-center justify-center gap-2">
+                  <span>زيارة الموقع</span>
+                  <svg className="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
-              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
-                <img src={sbcLogo} alt="Saudi Business Center" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-text">المركز السعودي للأعمال</h3>
-              <p className="text-brand-text-muted text-sm leading-relaxed">التعاون الاستراتيجي لتسهيل بيئة الاستثمار وخدمة قطاع الأعمال.</p>
+      {/* Success Path Banner */}
+      <section className="py-20 bg-brand-bg relative overflow-hidden border-y border-brand-border/50">
+        <div className="absolute inset-0 bg-brand-accent/5 opacity-50"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-8 flex justify-center">
+               <img 
+                 src={successPathLogo} 
+                 alt="Path to Success" 
+                 className="max-h-40 md:max-h-56 w-auto object-contain filter drop-shadow-[0_0_15px_rgba(212,175,55,0.3)] animate-float"
+               />
             </div>
-
-            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
-              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
-                <img src={modonLogo} alt="MODON" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-text">مدن</h3>
-              <p className="text-brand-text-muted text-sm leading-relaxed">شراكة لتطوير المدن الصناعية ودعم البنية التحتية والتقنية.</p>
-            </div>
-
-            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
-              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
-                <img src={partnersLogo} alt="Success Partners" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-text">تجار المال</h3>
-              <p className="text-brand-text-muted text-sm leading-relaxed">شريك النجاح الاستراتيجي والمستشار الموثوق في عالم المال.</p>
-            </div>
-
-            <div className="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 group shadow-lg flex flex-col items-center text-center">
-              <div className="w-full aspect-[2/1] flex items-center justify-center mb-6 overflow-hidden rounded-xl bg-white/5 p-4 group-hover:bg-white/10 transition-colors">
-                <img src={successPathLogo} alt="Path to Success" className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-text">الطريق إلى النجاح</h3>
-              <p className="text-brand-text-muted text-sm leading-relaxed">نحن هنا لنكون رفيقك الموثوق في كل خطوة نحو تحقيق طموحاتك المالية الكبرى.</p>
-            </div>
+            <p className="text-xl md:text-2xl text-brand-text-muted italic font-medium leading-relaxed max-w-3xl mx-auto">
+              "نحن نمهد لك الطريق لتصل إلى آفاق جديدة من النجاح والنمو المستدام في عالم الاستثمار"
+            </p>
           </div>
         </div>
       </section>
