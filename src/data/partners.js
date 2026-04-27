@@ -5,7 +5,7 @@ import commerceLogo from '../assets/projects/commerce_project.png'
 import industryLogo from '../assets/projects/industry_project.png'
 import cmaPartnerLogo from '../assets/partners/cma_partner.png'
 import samaPartnerLogo from '../assets/partners/sama_partner.png'
-import misaLogo from '../assets/partners/misa.png'
+import misaLogo from '../assets/partners/وزارة الاستثمار.jpeg'
 
 export const partnersData = [
   {
