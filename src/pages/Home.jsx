@@ -107,17 +107,7 @@ export const Home = () => {
             <h2 className="text-3xl md:text-5xl font-black text-brand-text">شركاء النجاح</h2>
           </div>
 
-          {/* Main Partner - Tjar Al-Mal (Large Banner Style) */}
-          <div className="flex flex-col items-center mb-16">
-            <img
-              src={partnersLogo}
-              alt="تجار المال"
-              className="w-full max-w-2xl md:max-w-3xl h-auto object-contain filter drop-shadow-[0_0_20px_rgba(212,175,55,0.2)] animate-float mb-8"
-            />
-            <p className="text-xl md:text-2xl text-brand-text font-bold text-center max-w-3xl leading-relaxed">
-              شريك النجاح الاستراتيجي والمستشار الموثوق في عالم المال والأعمال
-            </p>
-          </div>
+
 
           {/* Other Partners Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -178,24 +168,10 @@ export const Home = () => {
             </a>
           </div>
 
-          {/* Internal Projects */}
-          <div className="mb-20">
-            <h3 className="text-2xl font-bold text-brand-accent mb-8 border-r-4 border-brand-accent pr-4">مشاريع شركتنا بالمملكة العربية السعودية</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projectsData.filter(p => p.type === 'internal').map(project => (
-                <ProjectCard key={project.id} {...project} />
-              ))}
-            </div>
-          </div>
-
-          {/* External Projects */}
-          <div>
-            <h3 className="text-2xl font-bold text-brand-accent mb-8 border-r-4 border-brand-accent pr-4">مشاريع شركتنا بالخارج</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projectsData.filter(p => p.type === 'external').map(project => (
-                <ProjectCard key={project.id} {...project} />
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projectsData.map(project => (
+              <ProjectCard key={project.id} {...project} />
+            ))}
           </div>
         </div>
       </section>
