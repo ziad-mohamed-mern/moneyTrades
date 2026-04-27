@@ -30,6 +30,7 @@ export const projectsData = [
     status: 'قيد التنفيذ',
     completionDate: '2026',
     roi: 'تحسين كفاءة التشغيل',
+    externalLink: 'https://www.sultanmedcomplex.net/',
     type: 'internal'
   },
   {
@@ -42,6 +43,7 @@ export const projectsData = [
     status: 'قيد التأسيس',
     completionDate: '2027',
     roi: 'نمو مالي مستدام',
+    externalLink: 'https://future-bank-flow.base44.app/',
     type: 'internal'
   },
   {

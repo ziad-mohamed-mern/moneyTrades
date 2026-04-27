@@ -168,10 +168,34 @@ export const Home = () => {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projectsData.map(project => (
-              <ProjectCard key={project.id} {...project} />
-            ))}
+          <div className="space-y-16">
+            {/* Internal Projects */}
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-brand-text flex items-center gap-3">
+                <span className="w-2 h-8 bg-brand-accent rounded-full inline-block"></span>
+                المشاريع الداخلية
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {projectsData.filter(p => p.type === 'internal').map(project => (
+                  <ProjectCard key={project.id} {...project} />
+                ))}
+              </div>
+            </div>
+
+            {/* External Projects */}
+            {projectsData.filter(p => p.type === 'external').length > 0 && (
+              <div>
+                <h3 className="text-2xl font-bold mb-8 text-brand-text flex items-center gap-3">
+                  <span className="w-2 h-8 bg-brand-accent rounded-full inline-block"></span>
+                  المشاريع الخارجية
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {projectsData.filter(p => p.type === 'external').map(project => (
+                    <ProjectCard key={project.id} {...project} />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

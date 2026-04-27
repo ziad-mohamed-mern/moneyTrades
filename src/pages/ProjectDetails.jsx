@@ -77,6 +77,17 @@ export const ProjectDetails = () => {
                  <p className="text-brand-text-muted leading-relaxed mt-4">
                    تلتزم شركة تجار المال بتقديم أعلى العوائد من خلال تحليل عميق للبيانات واختيار شركاء موثوقين. هذا المشروع يعكس التزامنا بالابتكار والتطوير المستدام، مما يتيح للمستثمرين تنويع محافظهم بثقة تامة.
                  </p>
+
+                 {project.externalLink && (
+                   <a 
+                     href={project.externalLink}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="inline-block mt-8 px-8 py-3 bg-brand-accent hover:bg-brand-accent-hover text-brand-primary font-bold rounded-lg transition-colors shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                   >
+                     تفضل بزيارتنا
+                   </a>
+                 )}
               </div>
            </div>
 
