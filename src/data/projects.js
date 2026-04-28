@@ -56,6 +56,7 @@ export const projectsData = [
     status: 'مستمر',
     completionDate: '2025',
     roi: 'عوائد استثمارية قوية',
+    externalLink: 'https://www.alnafees-gold.com',
     type: 'internal'
   },
   {
@@ -68,6 +69,7 @@ export const projectsData = [
     status: 'قيد الإنشاء',
     completionDate: '2028',
     roi: 'ريادة في السوق',
+    externalLink: 'https://www.altawfeer-ev.com',
     type: 'internal'
   },
   // مشاريع خارجية
@@ -81,6 +83,7 @@ export const projectsData = [
     status: 'قيد التخطيط',
     completionDate: '2029',
     roi: 'توسع استثماري عالمي',
+    externalLink: 'https://www.tvui11-drones.com',
     type: 'external'
   }
 ];
