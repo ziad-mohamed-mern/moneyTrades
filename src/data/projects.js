@@ -3,7 +3,6 @@ import tradingAppImg from '../assets/projects/trading_app.png'
 import futureBankImg from '../assets/projects/future_bank.png'
 import goldFactoryImg from '../assets/projects/gold_factory.png'
 import evFactoryImg from '../assets/projects/ev_factory.png'
-import droneFactoryImg from '../assets/projects/drone_project.png'
 
 export const projectsData = [
   // مشاريع داخلية
@@ -30,7 +29,7 @@ export const projectsData = [
     status: 'قيد التنفيذ',
     completionDate: '2026',
     roi: 'تحسين كفاءة التشغيل',
-    externalLink: 'https://www.sultanmedcomplex.net/',
+    externalLink: 'https://al-sultan-international-medical-com.vercel.app/',
     type: 'internal'
   },
   {
@@ -56,7 +55,7 @@ export const projectsData = [
     status: 'مستمر',
     completionDate: '2025',
     roi: 'عوائد استثمارية قوية',
-    externalLink: 'https://www.alnafees-gold.com',
+    externalLink: 'https://gold-project-chi.vercel.app/',
     type: 'internal'
   },
   {
@@ -71,19 +70,5 @@ export const projectsData = [
     roi: 'ريادة في السوق',
     externalLink: 'https://www.altawfeer-ev.com',
     type: 'internal'
-  },
-  // مشاريع خارجية
-  {
-    id: 6,
-    title: 'مصنع الطائرات بدون طيار tvui11',
-    category: 'تكنولوجيا وصناعة الطيران',
-    image: droneFactoryImg,
-    description: 'مشروع دولي لتصنيع وتطوير طائرات بدون طيار مجهزة بأحدث تقنيات الذكاء الاصطناعي للاستخدامات المتعددة.',
-    features: ['أنظمة طيران ذكية', 'ذكاء اصطناعي', 'تطبيقات مدنية وتجارية'],
-    status: 'قيد التخطيط',
-    completionDate: '2029',
-    roi: 'توسع استثماري عالمي',
-    externalLink: 'https://www.tvui11-drones.com',
-    type: 'external'
   }
 ];
