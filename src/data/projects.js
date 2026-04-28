@@ -68,7 +68,7 @@ export const projectsData = [
     status: 'قيد الإنشاء',
     completionDate: '2028',
     roi: 'ريادة في السوق',
-    externalLink: 'https://www.altawfeer-ev.com',
+    externalLink: 'https://electric-car-project.vercel.app/',
     type: 'internal'
   }
 ];
