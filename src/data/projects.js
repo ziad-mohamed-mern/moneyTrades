@@ -21,7 +21,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'مجمع السلطان الطبي',
+    title: 'مجمع السلطان الطبي (ياشافى)',
     category: 'استثمار طبي',
     image: sultanMedicalImg,
     description: 'مجمع طبي متكامل يهدف إلى تقديم خدمات صحية عالية الجودة وتطوير الرعاية الصحية.',
