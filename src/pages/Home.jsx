@@ -1,5 +1,5 @@
 import heroBg from '../assets/hero_bg.png'
-import aboutCorp from '../assets/new_about.jpeg'
+import aboutLetter from '../assets/about_letter_dark.jpeg'
 import { FeatureCard } from '../components/FeatureCard'
 import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
@@ -57,45 +57,14 @@ export const Home = () => {
         </div>
       </header>
 
-      {/* About Section */}
-      <section id="about" className="py-32 bg-brand-bg">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left side: Image in About Section */}
-            <div className="relative">
-              <div className="absolute -inset-4 bg-brand-accent/20 rounded-lg blur-2xl -z-10"></div>
-              <img src={aboutCorp} alt="European corporate team" className="rounded-lg border border-brand-border shadow-2xl relative z-10 w-full object-cover aspect-[4/3]" />
-              <div className="absolute -bottom-6 -right-6 bg-brand-card p-8 rounded-lg border-l-4 border-brand-accent shadow-xl z-20 hidden md:block">
-                <div className="text-4xl font-black text-brand-accent mb-2">+15</div>
-                <div className="text-brand-text text-sm font-bold">عاماً من<br />التميز والخبرة</div>
-              </div>
-            </div>
-
-            {/* Right side: Text and Buttons */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-brand-accent font-bold mb-2">تجار المال </h3>
-                <h2 className="text-3xl md:text-5xl font-black leading-tight text-brand-text">
-                  شريكك الموثوق في <br />رحلة <span className="text-gradient-gold">النجاح المالي</span>
-                </h2>
-              </div>
-
-              <p className="text-brand-text-muted leading-relaxed text-lg">
-                تأسست شركة تجار المال بهدف إحداث نقلة نوعية في عالم الاستثمار وإدارة الثروات. نحن نؤمن بأن النجاح المالي يتطلب رؤية ثاقبة واستراتيجيات مدروسة.
-              </p>
-
-              <div className="grid sm:grid-cols-2 gap-6 pt-4 mb-8">
-                <div className="bg-brand-card shadow-lg p-6 rounded-lg border-t-2 border-brand-accent">
-                  <h4 className="text-xl font-bold mb-3 text-brand-text">رؤيتنا</h4>
-                  <p className="text-sm text-brand-text-muted">أن نكون الخيار الأول للمستثمرين في الشرق الأوسط من خلال تقديم عوائد مستدامة.</p>
-                </div>
-                <div className="bg-brand-card shadow-lg p-6 rounded-lg border-t-2 border-brand-accent">
-                  <h4 className="text-xl font-bold mb-3 text-brand-text">رسالتنا</h4>
-                  <p className="text-sm text-brand-text-muted">تمكين عملائنا من تحقيق أهدافهم المالية بشفافية، احترافية، وأمان تام.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* About Section (Chairman Message Image) */}
+      <section id="about" className="py-16 bg-brand-bg">
+        <div className="container mx-auto px-6 flex justify-center">
+          <img
+            src={aboutLetter}
+            alt="كلمة رئيس مجلس الإدارة"
+            className="w-full max-w-5xl h-auto rounded-xl shadow-2xl border border-brand-border"
+          />
         </div>
       </section>
 
