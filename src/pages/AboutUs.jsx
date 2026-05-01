@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import aboutCorp from '../assets/cert.jpeg';
+import commercialReg from '../assets/commercial-reg.jpeg';
 import heroBg from '../assets/hero_bg.png';
 
 export const AboutUs = () => {
@@ -35,9 +36,10 @@ export const AboutUs = () => {
               فريقنا يتألف من نخبة من المحللين الماليين والخبراء الاقتصاديين الذين يضعون مصلحة العميل في المقام الأول، ويقدمون استشارات مخصصة تلبي احتياجات كل مستثمر.
             </p>
           </div>
-          <div className="relative">
+          <div className="relative space-y-6">
             <div className="absolute -inset-4 bg-brand-accent/10 rounded-lg blur-2xl -z-10"></div>
-            <img src={aboutCorp} alt="مقر تجار المال" className="rounded-2xl border border-brand-border shadow-2xl relative z-10 w-full object-cover aspect-video" />
+            <img src={aboutCorp} alt="مقر تجار المال" className="rounded-2xl border border-brand-border shadow-2xl relative z-10 w-full" />
+            <img src={commercialReg} alt="ترخيص تجار المال" className="rounded-2xl border border-brand-border shadow-2xl relative z-10 w-full" />
           </div>
         </div>
 

@@ -3,12 +3,8 @@ import aboutLetter from '../assets/about_letter_dark.jpeg'
 import { FeatureCard } from '../components/FeatureCard'
 import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
-import { Logo } from '../components/Logo'
+
 import { Link } from 'react-router-dom'
-import mohLogo from '../assets/partners/moh.png'
-import sbcLogo from '../assets/partners/sbc.png'
-import modonLogo from '../assets/partners/modon.png'
-import partnersLogo from '../assets/partners/partners.png'
 import successPathLogo from '../assets/partners/path_to_success.png'
 import { partnersData } from '../data/partners'
 
