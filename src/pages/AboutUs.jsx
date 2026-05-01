@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import aboutCorp from '../assets/about_corp.png';
+import aboutCorp from '../assets/cert.jpeg';
 import heroBg from '../assets/hero_bg.png';
 
 export const AboutUs = () => {
@@ -28,7 +28,7 @@ export const AboutUs = () => {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-brand-text">تاريخنا ومسيرتنا</h2>
             <p className="text-brand-text-muted leading-relaxed text-lg">
-              تأسست شركة تجار المال بهدف إحداث نقلة نوعية في عالم الاستثمار وإدارة الثروات. نحن نؤمن بأن النجاح المالي يتطلب رؤية ثاقبة واستراتيجيات مدروسة. 
+              تأسست شركة تجار المال بهدف إحداث نقلة نوعية في عالم الاستثمار وإدارة الثروات. نحن نؤمن بأن النجاح المالي يتطلب رؤية ثاقبة واستراتيجيات مدروسة.
               على مدار السنوات الماضية، استطعنا بناء محفظة استثمارية ضخمة تخدم مختلف القطاعات الحيوية، وحققنا عوائد استثنائية بفضل التحليل الدقيق للسوق وإدارة المخاطر.
             </p>
             <p className="text-brand-text-muted leading-relaxed text-lg">

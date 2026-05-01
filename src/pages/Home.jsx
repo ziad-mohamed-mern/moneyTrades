@@ -1,5 +1,5 @@
 import heroBg from '../assets/hero_bg.png'
-import aboutCorp from '../assets/about_european.png'
+import aboutCorp from '../assets/new_about.jpeg'
 import { FeatureCard } from '../components/FeatureCard'
 import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
