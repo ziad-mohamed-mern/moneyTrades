@@ -116,6 +116,19 @@ export const ProjectDetails = () => {
            </div>
         </div>
 
+        {/* Return to Home Button */}
+        <div className="mt-16 text-center border-t border-brand-border pt-12">
+          <Link 
+            to="/" 
+            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-card hover:bg-brand-bg text-brand-text border border-brand-border rounded-xl transition-all font-bold hover:border-brand-accent group"
+          >
+            <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+            </svg>
+            العودة للرئيسية
+          </Link>
+        </div>
+
       </div>
     </div>
   )

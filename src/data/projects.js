@@ -3,7 +3,8 @@ import tradingAppImg from '../assets/projects/trading_app.png'
 import futureBankImg from '../assets/projects/future_bank.png'
 import goldFactoryImg from '../assets/projects/gold_factory.png'
 import evFactoryImg from '../assets/projects/ev_factory.png'
-import droneFactoryImg from '../assets/projects/drone_project.png'
+import juiceFactoryImg from '../assets/projects/juice_factory.png'
+
 
 export const projectsData = [
   // مشاريع داخلية
@@ -22,7 +23,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'مجمع السلطان الطبي',
+    title: 'مجمع السلطان الطبي (ياشافى)',
     category: 'استثمار طبي',
     image: sultanMedicalImg,
     description: 'مجمع طبي متكامل يهدف إلى تقديم خدمات صحية عالية الجودة وتطوير الرعاية الصحية.',
@@ -30,7 +31,7 @@ export const projectsData = [
     status: 'قيد التنفيذ',
     completionDate: '2026',
     roi: 'تحسين كفاءة التشغيل',
-    externalLink: 'https://www.sultanmedcomplex.net/',
+    externalLink: 'https://al-sultan-international-medical-com.vercel.app/',
     type: 'internal'
   },
   {
@@ -56,7 +57,7 @@ export const projectsData = [
     status: 'مستمر',
     completionDate: '2025',
     roi: 'عوائد استثمارية قوية',
-    externalLink: 'https://www.alnafees-gold.com',
+    externalLink: 'https://gold-project-chi.vercel.app/',
     type: 'internal'
   },
   {
@@ -69,21 +70,20 @@ export const projectsData = [
     status: 'قيد الإنشاء',
     completionDate: '2028',
     roi: 'ريادة في السوق',
-    externalLink: 'https://www.altawfeer-ev.com',
+    externalLink: 'https://electric-car-project.vercel.app/',
     type: 'internal'
   },
-  // مشاريع خارجية
   {
     id: 6,
-    title: 'مصنع الطائرات بدون طيار tvui11',
-    category: 'تكنولوجيا وصناعة الطيران',
-    image: droneFactoryImg,
-    description: 'مشروع دولي لتصنيع وتطوير طائرات بدون طيار مجهزة بأحدث تقنيات الذكاء الاصطناعي للاستخدامات المتعددة.',
-    features: ['أنظمة طيران ذكية', 'ذكاء اصطناعي', 'تطبيقات مدنية وتجارية'],
-    status: 'قيد التخطيط',
-    completionDate: '2029',
-    roi: 'توسع استثماري عالمي',
-    externalLink: 'https://www.tvui11-drones.com',
-    type: 'external'
+    title: 'مصنع مواسم للعصيرات',
+    category: 'صناعة الأغذية',
+    image: juiceFactoryImg,
+    description: 'مصنع متطور لإنتاج العصائر الطبيعية 100% بأعلى معايير الجودة والاستدامة، يقدم نضارة الطبيعة في كل رشفة.',
+    features: ['عصائر طبيعية 100%', 'بدون مواد حافظة', 'أحدث تقنيات الإنتاج'],
+    status: 'مستمر',
+    completionDate: '2025',
+    roi: 'نمو مستدام',
+    externalLink: 'https://juice-project-plum.vercel.app/',
+    type: 'internal'
   }
 ];
