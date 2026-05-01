@@ -3,6 +3,8 @@ import tradingAppImg from '../assets/projects/trading_app.png'
 import futureBankImg from '../assets/projects/future_bank.png'
 import goldFactoryImg from '../assets/projects/gold_factory.png'
 import evFactoryImg from '../assets/projects/ev_factory.png'
+import juiceFactoryImg from '../assets/projects/juice_factory.png'
+
 
 export const projectsData = [
   // مشاريع داخلية
@@ -69,6 +71,19 @@ export const projectsData = [
     completionDate: '2028',
     roi: 'ريادة في السوق',
     externalLink: 'https://electric-car-project.vercel.app/',
+    type: 'internal'
+  },
+  {
+    id: 6,
+    title: 'مصنع مواسم للعصيرات',
+    category: 'صناعة الأغذية',
+    image: juiceFactoryImg,
+    description: 'مصنع متطور لإنتاج العصائر الطبيعية 100% بأعلى معايير الجودة والاستدامة، يقدم نضارة الطبيعة في كل رشفة.',
+    features: ['عصائر طبيعية 100%', 'بدون مواد حافظة', 'أحدث تقنيات الإنتاج'],
+    status: 'مستمر',
+    completionDate: '2025',
+    roi: 'نمو مستدام',
+    externalLink: 'https://juice-project-plum.vercel.app/',
     type: 'internal'
   }
 ];
