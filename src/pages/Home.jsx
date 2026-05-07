@@ -1,5 +1,5 @@
 import heroBg from '../assets/hero_bg.png'
-import chairmanMessageImg from '../assets/chairman_message.png'
+import chairmanMessageImg from '../../WhatsApp Image 2026-05-07 at 8.19.18 PM.jpeg'
 import { FeatureCard } from '../components/FeatureCard'
 import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
@@ -60,14 +60,12 @@ export const Home = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
               <div className="p-8 md:p-10 lg:p-12 order-2 lg:order-1">
                 <h2 className="text-3xl md:text-4xl font-black text-brand-text mb-6">كلمة رئيس مجلس الإدارة</h2>
-                <div className="bg-white text-red-600 border border-red-200 rounded-xl p-5 mb-6 leading-relaxed text-base md:text-lg">
-                  <p className="mb-3">
-                    الحمد لله الذي أنعم علينا بالأمن والاستقرار، ووفّق قيادتنا الرشيدة لما فيه خير الوطن والمواطن. والصلاة والسلام على أشرف الأنبياء والمرسلين.
-                  </p>
-                  <p>
-                    يسرّنا في افتتاح شركتنا ان نتقدم بالشكر لمقام خادم الحرمين الشريفين، وسمو ولي العهد - حفظهما الله - الذين أولوا القطاع الاقتصادي والتجاري اهتماما كبيرا، ضمن رؤية 2030  هذه الرؤية الطموحة  التي تهدف إلى تنويع مصادر الدخل وتعزيز الاستثمار.
-                  </p>
-                </div>
+                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
+                  الحمد لله الذي أنعم علينا بالأمن والاستقرار، ووفّق قيادتنا الرشيدة لما فيه خير الوطن والمواطن. والصلاة والسلام على أشرف الأنبياء والمرسلين.
+                </p>
+                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
+                  يسرّنا في افتتاح شركتنا ان نتقدم بالشكر لمقام خادم الحرمين الشريفين، وسمو ولي العهد - حفظهما الله - الذين أولوا القطاع الاقتصادي والتجاري اهتماما كبيرا، ضمن رؤية 2030  هذه الرؤية الطموحة  التي تهدف إلى تنويع مصادر الدخل وتعزيز الاستثمار.
+                </p>
                 <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
                   إن تجار المال والأعمال يشكّلون ركيزة أساسية في بناء الاقتصاد الوطني، وشركاء فاعلين في تحقيق التنمية المستدامة، من خلال ما يقدمونه من مبادرات واستثمارات تسهم في دعم النمو وخلق الفرص.
                 </p>
