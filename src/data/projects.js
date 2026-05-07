@@ -5,6 +5,8 @@ import goldFactoryImg from '../assets/projects/gold_factory.png'
 import evFactoryImg from '../assets/projects/ev_factory.png'
 import juiceFactoryImg from '../assets/projects/juice_factory.png'
 import droneExpoImg from '../assets/projects/drone_expo.png'
+import tujarStoreImg from '../assets/projects/tujar_store.png'
+import visionSchoolImg from '../assets/projects/vision_school.png'
 
 
 export const projectsData = [
@@ -100,6 +102,32 @@ export const projectsData = [
     completionDate: '2026',
     roi: 'تعزيز الحضور الرقمي',
     externalLink: 'https://plane-project-one.vercel.app/',
+    type: 'external'
+  },
+  {
+    id: 8,
+    title: 'تجار المال متخصصون في المتاجر الالكترونيه',
+    category: 'حلول التجارة الإلكترونية',
+    image: tujarStoreImg,
+    description: 'مشروع خارجي لتقديم حلول احترافية في إنشاء وإدارة المتاجر الإلكترونية مع التركيز على النمو والمبيعات.',
+    features: ['إنشاء متجر احترافي', 'تسويق وإدارة متجر', 'دعم فني متواصل'],
+    status: 'مكتمل',
+    completionDate: '2026',
+    roi: 'زيادة المبيعات والأرباح',
+    externalLink: 'https://tujar-almal.vercel.app/',
+    type: 'external'
+  },
+  {
+    id: 9,
+    title: 'مدارس رؤيا المستقبل العالميه',
+    category: 'تعليم / مدارس عالمية',
+    image: visionSchoolImg,
+    description: 'منصة تعريفية لمدارس رؤيا المستقبل العالمية تجمع بين الهوية المحلية والمعايير التعليمية العالمية.',
+    features: ['تصميم تعليمي حديث', 'محتوى ثنائي اللغة', 'رحلة مستخدم واضحة'],
+    status: 'مكتمل',
+    completionDate: '2026',
+    roi: 'تعزيز الحضور المؤسسي',
+    externalLink: 'https://vision-of-the-future-international.vercel.app/ar',
     type: 'external'
   }
 ];

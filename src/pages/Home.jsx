@@ -1,5 +1,5 @@
 import heroBg from '../assets/hero_bg.png'
-import aboutLetter from '../assets/about_letter_dark.jpeg'
+import chairmanMessageImg from '../assets/chairman_message.png'
 import { FeatureCard } from '../components/FeatureCard'
 import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
@@ -53,14 +53,36 @@ export const Home = () => {
         </div>
       </header>
 
-      {/* About Section (Chairman Message Image) */}
+      {/* About Section (Chairman Message) */}
       <section id="about" className="py-16 bg-brand-bg">
-        <div className="container mx-auto px-6 flex justify-center">
-          <img
-            src={aboutLetter}
-            alt="كلمة رئيس مجلس الإدارة"
-            className="w-full max-w-5xl h-auto rounded-xl shadow-2xl border border-brand-border"
-          />
+        <div className="container mx-auto px-6">
+          <div className="bg-brand-card rounded-2xl border border-brand-border shadow-2xl overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+              <div className="p-8 md:p-10 lg:p-12 order-2 lg:order-1">
+                <h2 className="text-3xl md:text-4xl font-black text-brand-text mb-6">كلمة رئيس مجلس الإدارة</h2>
+                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
+                  الحمد لله الذي أنعم علينا بالأمن والاستقرار، ووفّق قيادتنا الرشيدة لما فيه خير الوطن والمواطن. والصلاة والسلام على أشرف الأنبياء والمرسلين.
+                </p>
+                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
+                  يسرّنا في افتتاح شركتنا في ظل ما تشهده مملكتنا الغالية من نهضة اقتصادية متسارعة، بدعم كريم من حكومة خادم الحرمين الشريفين، وسمو ولي العهد - حفظهما الله - الذين أولوا القطاع الاقتصادي والتجاري اهتماما كبيرا، ضمن رؤية طموحة تهدف إلى تنويع مصادر الدخل وتعزيز الاستثمار.
+                </p>
+            
+                <p className="text-brand-text-muted leading-relaxed text-lg mb-6">
+                  نسأل الله أن يديم على بلادنا نعمة الأمن والرخاء، وأن يوفّق قيادتنا لما فيه الخير، وأن يبارك في جهود الجميع.
+                </p>
+                <p className="text-brand-text font-bold text-xl">رئيس مجلس الإدارة</p>
+                <p className="text-brand-accent font-bold text-lg mt-1">د. عادل بن علي الحسني</p>
+              </div>
+
+              <div className="order-1 lg:order-2 border-b lg:border-b-0 lg:border-r border-brand-border">
+                <img
+                  src={chairmanMessageImg}
+                  alt="كلمة رئيس مجلس الإدارة"
+                  className="w-full h-full object-cover min-h-[280px] lg:min-h-[420px]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
