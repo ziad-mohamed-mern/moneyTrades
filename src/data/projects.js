@@ -4,6 +4,7 @@ import futureBankImg from '../assets/projects/future_bank.png'
 import goldFactoryImg from '../assets/projects/gold_factory.png'
 import evFactoryImg from '../assets/projects/ev_factory.png'
 import juiceFactoryImg from '../assets/projects/juice_factory.png'
+import droneExpoImg from '../assets/projects/drone_expo.png'
 
 
 export const projectsData = [
@@ -85,5 +86,20 @@ export const projectsData = [
     roi: 'نمو مستدام',
     externalLink: 'https://juice-project-plum.vercel.app/',
     type: 'internal'
+  },
+
+  // مشاريع خارجية
+  {
+    id: 7,
+    title: 'معرض صناعة وبيع الطائرات بدون طيار (الدرونز)',
+    category: 'معرض / درونز',
+    image: droneExpoImg,
+    description: 'واجهة عرض احترافية لمعرض متخصص في صناعة وبيع الطائرات بدون طيار (الدرونز) مع أقسام وخدمات متنوعة.',
+    features: ['تصميم حديث', 'عرض أقسام متعددة', 'تجربة مستخدم سلسة'],
+    status: 'مكتمل',
+    completionDate: '2026',
+    roi: 'تعزيز الحضور الرقمي',
+    externalLink: 'https://plane-project-one.vercel.app/',
+    type: 'external'
   }
 ];
