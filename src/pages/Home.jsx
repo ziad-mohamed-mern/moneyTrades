@@ -79,11 +79,11 @@ export const Home = () => {
                 <p className="text-brand-accent font-bold text-lg mt-1">د. عادل بن علي الحسني</p>
               </div>
 
-              <div className="order-1 lg:order-2 border-b lg:border-b-0 lg:border-r border-brand-border">
+              <div className="order-1 lg:order-2 border-b lg:border-b-0 lg:border-r border-brand-border flex items-center justify-center bg-brand-bg/30">
                 <img
                   src={chairmanMessageImg}
                   alt="كلمة رئيس مجلس الإدارة"
-                  className="w-full h-full object-cover min-h-[280px] lg:min-h-[420px]"
+                  className="w-full max-h-[600px] object-contain p-4 lg:p-8"
                 />
               </div>
             </div>
