@@ -1,5 +1,5 @@
 import heroBg from '../assets/hero_bg.png'
-import chairmanMessageImg from '../../WhatsApp Image 2026-05-07 at 8.19.18 PM.jpeg'
+import chairmanMessageImg from '../../WhatsApp Image 2026-05-10 at 8.05.20 PM.jpeg'
 import { FeatureCard } from '../components/FeatureCard'
 import { ProjectCard } from '../components/ProjectCard'
 import { projectsData } from '../data/projects'
