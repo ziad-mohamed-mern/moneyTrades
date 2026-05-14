@@ -34,7 +34,7 @@ export const Home = () => {
             <span className="text-gradient-gold">استثمارك يبدأ من هنا</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-brand-text-muted max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-in delay-200">
+          <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-in delay-200">
             نقدم حلولاً مالية متكاملة لرواد الأعمال والمستثمرين، بخبرة تمتد لسنوات في تنمية الثروات وإدارة المخاطر برؤية مستقبلية واضحة.
           </p>
 
