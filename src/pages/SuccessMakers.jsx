@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import heroBg from '../assets/hero_bg.png';
 import chairmanImg from '../assets/success_maker_chairman.jpeg';
+import omarImg from '../assets/omar.jpeg';
+import ziadImg from '../assets/ziad.jpeg';
 
 export const SuccessMakers = () => {
   const departments = [
@@ -20,8 +22,12 @@ export const SuccessMakers = () => {
       id: 'it',
       title: 'إدارة نظم المعلومات IT',
       role: 'نظم المعلومات والتقنية',
+      members: [
+        { name: 'عمر', role: 'Backend Developer', image: omarImg },
+        { name: 'زياد', role: 'Frontend Developer', image: ziadImg }
+      ],
       desc1: 'توفر الإدارة البنية التحتية التقنية المتطورة والحلول الرقمية التي تضمن سير العمليات بكفاءة وأمان عالي.',
-      desc2: 'نركز على الابتكار التقني وحماية البيانات، وتطوير الأنظمة الذكية التي تسهل تجربة المستثمرين والعملاء في عالم المال.',
+      desc2: 'نركز على الابتكار التقني وحماية البيانات، وتطوير الأنظمة الذكية التي تسهل تجربة المستثمرين والعملاء في عالم المال (كلية العلوم - قسم علوم الحاسب).',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -143,50 +149,79 @@ export const SuccessMakers = () => {
                 </h2>
               </div>
               
-              <div className={`bg-brand-card rounded-2xl md:rounded-3xl border border-brand-border overflow-hidden shadow-2xl transition-all hover:shadow-brand-accent/10 flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                {/* Image Placeholder */}
-                <div className="md:w-1/2 relative h-[250px] md:h-auto overflow-hidden group bg-brand-secondary flex items-center justify-center">
-                  <div className="absolute inset-0 bg-brand-accent/5 opacity-40"></div>
-                  <div className="z-10 text-brand-accent/20 scale-[2] md:scale-[3]">
-                    {dept.icon}
-                  </div>
-                  <div className="absolute bottom-4 right-4 bg-brand-accent text-brand-primary px-3 py-1 rounded text-[10px] md:text-xs font-bold">سيتم إضافة الصورة لاحقاً</div>
-                </div>
-
-                {/* Content */}
-                <div className="md:w-1/2 p-6 md:p-12 flex flex-col justify-center space-y-4 md:space-y-6">
-                  <div>
-                    <h3 className="text-xl md:text-2xl font-bold text-brand-text mb-2">{dept.role}</h3>
-                    <div className="h-1 w-16 bg-brand-accent rounded-full mb-4 md:mb-6"></div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-brand-accent/10 rounded-lg flex items-center justify-center text-brand-accent">
-                        {dept.icon}
+              {dept.members ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {dept.members.map((member, mIndex) => (
+                    <div key={mIndex} className="bg-brand-card rounded-3xl border border-brand-border overflow-hidden shadow-2xl transition-all hover:shadow-brand-accent/10 flex flex-col">
+                      <div className="relative h-[400px] overflow-hidden group bg-brand-bg/30">
+                        <img 
+                          src={member.image} 
+                          alt={member.name} 
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent"></div>
+                        <div className="absolute bottom-6 right-6 text-right">
+                          <h3 className="text-2xl font-bold text-white">{member.name}</h3>
+                          <p className="text-brand-accent font-bold">{member.role}</p>
+                        </div>
                       </div>
-                      <p className="text-brand-text-muted leading-relaxed">
-                        {dept.desc1}
-                      </p>
+                      <div className="p-8 flex flex-col justify-center space-y-4">
+                        <p className="text-brand-text-muted leading-relaxed">
+                          {dept.desc1}
+                        </p>
+                        <div className="pt-4 border-t border-brand-border/50">
+                          <p className="text-brand-accent font-bold text-sm">عضو في فريق {dept.title}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className={`bg-brand-card rounded-2xl md:rounded-3xl border border-brand-border overflow-hidden shadow-2xl transition-all hover:shadow-brand-accent/10 flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                  {/* Image Placeholder */}
+                  <div className="md:w-1/2 relative min-h-[300px] md:h-auto overflow-hidden group bg-brand-secondary flex items-center justify-center">
+                    <div className="absolute inset-0 bg-brand-accent/5 opacity-40"></div>
+                    <div className="z-10 text-brand-accent/20 scale-[2] md:scale-[3]">
+                      {dept.icon}
+                    </div>
+                    <div className="absolute bottom-4 right-4 bg-brand-accent text-brand-primary px-3 py-1 rounded text-[10px] md:text-xs font-bold">سيتم إضافة الصورة لاحقاً</div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="md:w-1/2 p-6 md:p-12 flex flex-col justify-center space-y-4 md:space-y-6">
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-brand-text mb-2">{dept.role}</h3>
+                      <div className="h-1 w-16 bg-brand-accent rounded-full mb-4 md:mb-6"></div>
                     </div>
 
-                    <div className="flex gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-brand-accent/10 rounded-lg flex items-center justify-center text-brand-accent">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
+                    <div className="space-y-4">
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-10 h-10 bg-brand-accent/10 rounded-lg flex items-center justify-center text-brand-accent">
+                          {dept.icon}
+                        </div>
+                        <p className="text-brand-text-muted leading-relaxed">
+                          {dept.desc1}
+                        </p>
                       </div>
-                      <p className="text-brand-text-muted leading-relaxed">
-                        {dept.desc2}
-                      </p>
+
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-10 h-10 bg-brand-accent/10 rounded-lg flex items-center justify-center text-brand-accent">
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                          </svg>
+                        </div>
+                        <p className="text-brand-text-muted leading-relaxed">
+                          {dept.desc2}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="pt-6 border-t border-brand-border/50">
+                      <p className="text-brand-accent font-bold">نعمل بإحترافية لضمان نجاحكم</p>
                     </div>
                   </div>
-
-                  <div className="pt-6 border-t border-brand-border/50">
-                    <p className="text-brand-accent font-bold">نعمل بإحترافية لضمان نجاحكم</p>
-                  </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
