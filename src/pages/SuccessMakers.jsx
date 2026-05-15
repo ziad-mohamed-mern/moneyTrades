@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import heroBg from '../assets/hero_bg.png';
 import chairmanImg from '../assets/success_maker_chairman.jpeg';
 
