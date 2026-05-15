@@ -65,6 +65,34 @@ export const AboutUs = () => {
           </div>
         </div>
 
+        {/* Success Makers Section */}
+        <div className="mb-24">
+          <div className="bg-brand-card rounded-3xl border border-brand-border overflow-hidden p-8 md:p-12 shadow-xl relative group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-accent/5 rounded-full -mr-32 -mt-32 blur-3xl group-hover:bg-brand-accent/10 transition-colors"></div>
+            <div className="relative z-10">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="text-right md:text-right flex-1">
+                  <h2 className="text-3xl font-bold text-brand-text mb-4">تعرف على أعضاء صناع النجاح</h2>
+                  <p className="text-brand-text-muted text-lg leading-relaxed max-w-2xl">
+                    نحن نفخر بنخبة من الكوادر والخبرات التي تكرس جهودها لخدمتكم وتحقيق أهدافكم المالية. فريقنا هو المحرك الأساسي لنجاحاتنا المستمرة.
+                  </p>
+                </div>
+                <div className="flex-shrink-0">
+                  <Link 
+                    to="/success-makers" 
+                    className="inline-flex items-center gap-3 px-8 py-4 bg-brand-accent hover:bg-brand-accent-hover text-brand-primary font-bold rounded-xl shadow-lg transition-all hover:-translate-y-1"
+                  >
+                    عرض الإدارة العليا
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Call to action */}
         <div className="text-center bg-brand-secondary p-12 rounded-3xl border border-brand-border">
           <h3 className="text-2xl md:text-3xl font-bold text-brand-text mb-6">هل أنت مستعد لبدء رحلتك الاستثمارية معنا؟</h3>

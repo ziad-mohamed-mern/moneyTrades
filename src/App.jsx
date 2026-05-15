@@ -6,6 +6,7 @@ import { ProjectDetails } from './pages/ProjectDetails'
 import { ThemeProvider } from './context/ThemeContext'
 
 import { AboutUs } from './pages/AboutUs'
+import { SuccessMakers } from './pages/SuccessMakers'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/success-makers" element={<SuccessMakers />} />
             <Route path="/project/:id" element={<ProjectDetails />} />
           </Routes>
         </main>
