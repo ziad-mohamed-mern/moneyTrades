@@ -29,22 +29,22 @@ export const Home = () => {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 animate-fade-in delay-100 max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-7xl font-black leading-tight mb-6 animate-fade-in delay-100 max-w-5xl mx-auto px-4">
             تجار المال <br />
             <span className="text-gradient-gold">استثمارك يبدأ من هنا</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-in delay-200">
+          <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-in delay-200 px-6">
             نقدم حلولاً مالية متكاملة لرواد الأعمال والمستثمرين، بخبرة تمتد لسنوات في تنمية الثروات وإدارة المخاطر برؤية مستقبلية واضحة.
           </p>
 
           <div className="flex justify-center animate-fade-in delay-300 relative z-30">
-            <Link to="/about-us" className="px-10 py-4 bg-brand-accent hover:bg-brand-accent-hover text-brand-primary font-bold rounded shadow-xl transition-all hover:-translate-y-1">
+            <Link to="/about-us" className="px-8 py-3 md:px-10 md:py-4 bg-brand-accent hover:bg-brand-accent-hover text-brand-primary font-bold rounded shadow-xl transition-all hover:-translate-y-1">
               من نحن
             </Link>
           </div>
 
-          <div className="absolute bottom-[-100px] left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20 hidden md:block">
             <a href="#about" className="flex flex-col items-center gap-2 text-brand-text-muted hover:text-brand-accent transition-colors">
               <span className="text-xs font-bold uppercase tracking-widest">اكتشف</span>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
@@ -54,36 +54,40 @@ export const Home = () => {
       </header>
 
       {/* About Section (Chairman Message) */}
-      <section id="about" className="py-16 bg-brand-bg">
+      <section id="about" className="py-16 md:py-24 bg-brand-bg">
         <div className="container mx-auto px-6">
           <div className="bg-brand-card rounded-2xl border border-brand-border shadow-2xl overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
-              <div className="p-8 md:p-10 lg:p-12 order-2 lg:order-1">
-                <h2 className="text-3xl md:text-4xl font-black text-brand-text mb-6">كلمة رئيس مجلس الإدارة</h2>
-                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
-                  الحمد لله الذي أنعم علينا بالأمن والاستقرار، ووفّق قيادتنا الرشيدة لما فيه خير الوطن والمواطن. والصلاة والسلام على أشرف الأنبياء والمرسلين.
-                </p>
-                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
-                  يسرّنا في افتتاح شركتنا ان نتقدم بالشكر لمقام خادم الحرمين الشريفين، وسمو ولي العهد - حفظهما الله - الذين أولوا القطاع الاقتصادي والتجاري اهتماما كبيرا، ضمن رؤية 2030  هذه الرؤية الطموحة  التي تهدف إلى تنويع مصادر الدخل وتعزيز الاستثمار.
-                </p>
-                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
-                  إن تجار المال والأعمال يشكّلون ركيزة أساسية في بناء الاقتصاد الوطني، وشركاء فاعلين في تحقيق التنمية المستدامة، من خلال ما يقدمونه من مبادرات واستثمارات تسهم في دعم النمو وخلق الفرص.
-                </p>
-                <p className="text-brand-text-muted leading-relaxed text-lg mb-4">
-                  ونحن اليوم، نؤكد على أهمية مواكبة التحولات الاقتصادية، وتعزيز الشراكات، والعمل بروح الابتكار والمسؤولية، بما يتماشى مع تطلعات قيادتنا ورؤية وطننا نحو مستقبل أكثر ازدهارًا.
-                </p>
-                <p className="text-brand-text-muted leading-relaxed text-lg mb-6">
-                  نسأل الله أن يديم على بلادنا نعمة الأمن والرخاء، وأن يوفق قيادتنا لما فيه الخير، وأن يبارك في جهود الجميع.
-                </p>
-                <p className="text-brand-text font-bold text-xl">رئيس مجلس الإدارة</p>
-                <p className="text-brand-accent font-bold text-lg mt-1">د. عادل بن علي الحسني</p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+              <div className="p-6 md:p-10 lg:p-12 order-2 lg:order-1">
+                <h2 className="text-2xl md:text-4xl font-black text-brand-text mb-6">كلمة رئيس مجلس الإدارة</h2>
+                <div className="space-y-4 text-brand-text-muted leading-relaxed text-base md:text-lg">
+                  <p>
+                    الحمد لله الذي أنعم علينا بالأمن والاستقرار، ووفّق قيادتنا الرشيدة لما فيه خير الوطن والمواطن. والصلاة والسلام على أشرف الأنبياء والمرسلين.
+                  </p>
+                  <p>
+                    يسرّنا في افتتاح شركتنا ان نتقدم بالشكر لمقام خادم الحرمين الشريفين، وسمو ولي العهد - حفظهما الله - الذين أولوا القطاع الاقتصادي والتجاري اهتماما كبيرا، ضمن رؤية 2030 هذه الرؤية الطموحة التي تهدف إلى تنويع مصادر الدخل وتعزيز الاستثمار.
+                  </p>
+                  <p>
+                    إن تجار المال والأعمال يشكّلون ركيزة أساسية في بناء الاقتصاد الوطني، وشركاء فاعلين في تحقيق التنمية المستدامة، من خلال ما يقدمونه من مبادرات واستثمارات تسهم في دعم النمو وخلق الفرص.
+                  </p>
+                  <p>
+                    ونحن اليوم، نؤكد على أهمية مواكبة التحولات الاقتصادية، وتعزيز الشراكات، والعمل بروح الابتكار والمسؤولية، بما يتماشى مع تطلعات قيادتنا ورؤية وطننا نحو مستقبل أكثر ازدهارًا.
+                  </p>
+                  <p>
+                    نسأل الله أن يديم على بلادنا نعمة الأمن والرخاء، وأن يوفق قيادتنا لما فيه الخير، وأن يبارك في جهود الجميع.
+                  </p>
+                </div>
+                <div className="mt-8">
+                  <p className="text-brand-text font-bold text-lg md:text-xl">رئيس مجلس الإدارة</p>
+                  <p className="text-brand-accent font-bold text-base md:text-lg mt-1">د. عادل بن علي الحسني</p>
+                </div>
               </div>
 
-              <div className="order-1 lg:order-2 border-b lg:border-b-0 lg:border-r border-brand-border flex items-center justify-center bg-brand-bg/30">
+              <div className="order-1 lg:order-2 border-b lg:border-b-0 lg:border-r border-brand-border bg-brand-bg/30 h-full flex items-center justify-center">
                 <img
                   src={chairmanMessageImg}
                   alt="كلمة رئيس مجلس الإدارة"
-                  className="w-full max-h-[600px] object-contain p-4 lg:p-8"
+                  className="w-full max-h-[400px] lg:max-h-[600px] object-contain p-6 lg:p-8"
                 />
               </div>
             </div>
@@ -99,9 +103,6 @@ export const Home = () => {
             <h2 className="text-3xl md:text-5xl font-black text-brand-text">شركاء النجاح</h2>
           </div>
 
-
-
-          {/* Other Partners Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {partnersData.map((partner) => (
               <a
@@ -119,7 +120,7 @@ export const Home = () => {
 
                 <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-brand-accent text-brand-primary font-bold flex items-center justify-center gap-2">
                   <span>زيارة الموقع</span>
-                  <svg className="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  <svg className="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7-7m7-7H3" /></svg>
                 </div>
               </a>
             ))}
@@ -186,7 +187,6 @@ export const Home = () => {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -195,7 +195,6 @@ export const Home = () => {
       <section id="contact" className="py-24 bg-brand-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto bg-brand-card rounded-2xl border border-brand-border overflow-hidden shadow-2xl flex flex-col md:flex-row">
-
             <div className="md:w-5/12 p-10 bg-brand-card border-l border-brand-border relative overflow-hidden">
               <div className="absolute inset-0 bg-brand-accent/5"></div>
               <div className="relative z-10">
@@ -251,7 +250,6 @@ export const Home = () => {
                 </button>
               </form>
             </div>
-
           </div>
         </div>
       </section>

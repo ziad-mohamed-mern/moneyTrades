@@ -84,13 +84,13 @@ export const SuccessMakers = () => {
         <div className="max-w-5xl mx-auto mb-32">
           <div className="bg-brand-card rounded-3xl border border-brand-border overflow-hidden shadow-2xl transition-all hover:shadow-brand-accent/10">
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="relative h-[400px] md:h-full overflow-hidden group">
+              <div className="relative overflow-hidden group bg-brand-bg/30 border-b md:border-b-0 md:border-l border-brand-border flex items-center justify-center min-h-[300px] md:min-h-[500px]">
                 <img 
                   src={chairmanImg} 
                   alt="رئيس مجلس الإدارة" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full max-h-[400px] md:max-h-[600px] object-contain p-6 md:p-10 transition-transform duration-500 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/20 to-transparent pointer-events-none"></div>
               </div>
               
               <div className="p-8 md:p-12 flex flex-col justify-center space-y-6">
@@ -133,31 +133,31 @@ export const SuccessMakers = () => {
         </div>
 
         {/* Operational Departments Flow */}
-        <div className="space-y-24">
+        <div className="space-y-16 md:space-y-24">
           {departments.map((dept, index) => (
             <div key={dept.id} className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-brand-text inline-block relative">
+              <div className="text-center mb-8 md:mb-12">
+                <h2 className="text-2xl md:text-3xl font-bold text-brand-text inline-block relative">
                   {dept.title}
                   <div className="absolute -bottom-2 right-0 w-full h-1 bg-brand-accent rounded-full"></div>
                 </h2>
               </div>
               
-              <div className={`bg-brand-card rounded-3xl border border-brand-border overflow-hidden shadow-2xl transition-all hover:shadow-brand-accent/10 flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+              <div className={`bg-brand-card rounded-2xl md:rounded-3xl border border-brand-border overflow-hidden shadow-2xl transition-all hover:shadow-brand-accent/10 flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 {/* Image Placeholder */}
-                <div className="md:w-1/2 relative h-[300px] md:h-auto overflow-hidden group bg-brand-secondary flex items-center justify-center">
+                <div className="md:w-1/2 relative h-[250px] md:h-auto overflow-hidden group bg-brand-secondary flex items-center justify-center">
                   <div className="absolute inset-0 bg-brand-accent/5 opacity-40"></div>
-                  <div className="z-10 text-brand-accent/20 scale-[3]">
+                  <div className="z-10 text-brand-accent/20 scale-[2] md:scale-[3]">
                     {dept.icon}
                   </div>
-                  <div className="absolute bottom-4 right-4 bg-brand-accent text-brand-primary px-4 py-1 rounded text-xs font-bold">سيتم إضافة الصورة لاحقاً</div>
+                  <div className="absolute bottom-4 right-4 bg-brand-accent text-brand-primary px-3 py-1 rounded text-[10px] md:text-xs font-bold">سيتم إضافة الصورة لاحقاً</div>
                 </div>
 
                 {/* Content */}
-                <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center space-y-6">
+                <div className="md:w-1/2 p-6 md:p-12 flex flex-col justify-center space-y-4 md:space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-brand-text mb-2">{dept.role}</h3>
-                    <div className="h-1 w-16 bg-brand-accent rounded-full mb-6"></div>
+                    <h3 className="text-xl md:text-2xl font-bold text-brand-text mb-2">{dept.role}</h3>
+                    <div className="h-1 w-16 bg-brand-accent rounded-full mb-4 md:mb-6"></div>
                   </div>
 
                   <div className="space-y-4">
